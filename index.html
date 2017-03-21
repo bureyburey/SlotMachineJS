@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burey's Slot Machine</title>
+        <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/bureyburey/Scoreboard-Module/master/scoreboard.js"></script> 
+    </head>
+    <body bgcolor="#A4B4B3">
+        <div id="burey">Burey's Slot Machine</div>
+        <canvas id="myCanvas"></canvas>
+        <button class="betClass" id="raiseBet1">⇧ 💲x1</button>
+        <button class="betClass" id="raiseBet10">⇧ 💲x10</button>
+        <button class="betClass" id="raiseBet50">⇧ 💲x50</button>
+        <button id="allIn">All In!</button>
+        <button class="betClass" id="lowerBet1">⇩ 💲x1</button>
+        <button class="betClass" id="lowerBet10">⇩ 💲x10</button>
+        <button class="betClass" id="lowerBet50">⇩ 💲x50</button>
+        <br />
+        <button id="spinBtn">Spin!</button>
+        <br />
+        <div id="winInfo">Round Winnings</div>
+        <button id="showScoreboardBtn">Top Winners</button>
+        <div id="debugIcons"></div>
+        <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBKGAvIPJKxf65AQzIfITMqUGbGy8uK9Xw",
+    authDomain: "project--7771663449125504840.firebaseapp.com",
+    databaseURL: "https://project--7771663449125504840.firebaseio.com",
+    storageBucket: "project--7771663449125504840.appspot.com",
+    messagingSenderId: "567920493759"
+  };
+  firebase.initializeApp(config);
+</script>
+    </body>
+</html>
